@@ -1,0 +1,35 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/scripts.js"></script>
+
+  <title>Check yo' Triangle</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Check what type of triangle you have!</h1>
+
+    <form id="triangle">
+      <div class="form-group">
+        <label for="side1">Enter the first side</label>
+        <input id="side1" type="number">
+
+        <label for="side2">Enter the second side</label>
+        <input id="side2" type="number">
+
+        <label for="side3">Enter the third side</label>
+        <input id="side3" type="number">
+      </div>
+
+      <button type="submit" class="btn">Submit</button>
+    </form>
+
+    <div class="triangles">
+      <p>The sides: <span class="allSides"></span> are <span class="result"></span></p>
+    </div>
+
+  </div>
+</body>
+</html>

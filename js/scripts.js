@@ -1,18 +1,19 @@
-function leapYear(year) {
-  if (year % 4 === 0) {
-    if (year % 100 === 0) {
-      if (year % 400 === 0) {
-        return true;
-      }
-      else {
-        return false;
-      }
+function findTriangle(side1, side2, side3) {
+  var triangleArray = [side1, side2, side3];
+  triangleArray.sort();
+  var sum = triangleArray[0] + triangleArray[1];
+  if (sum < triangleArray[2]) {
+    return "not a triangle";
     }
     else {
-      return true;
+      if ((side1 == side2) && (side2 == side3)) {
+        return "equilateral";
+      }
+      else if ((side1 == side2) || (side2 == side3)) {
+        return "isosceles";
+      }
+      else {
+        return "scalene";
     }
-  }
-  else {
-    return false;
   }
 };
